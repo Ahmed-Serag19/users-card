@@ -1,0 +1,5 @@
+.users-list li {
+  border: 1px solid rgb(46, 46, 46);
+  padding: 10px;
+  font-weight: 500;
+}
