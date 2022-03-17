@@ -26,10 +26,17 @@ export default function UserInput(props) {
       });
       return;
     }
-    if (+enteredage < 1) {
+    if (+enteredage < 1 || +enteredage > 100) {
       setError({
         title: "Invalid Age",
-        message: "Age cant be less than 0!",
+        message: "Age cant be less than 0 or more than 100!",
+      });
+      return;
+    }
+    if (enteredage === isNaN) {
+      setError({
+        title: "Invalid Age",
+        message: "Age must be a number!",
       });
       return;
     }
